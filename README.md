@@ -30,7 +30,8 @@ O objetivo é automatizar o **processamento de contratos** e gerar **parcelas de
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/contract-installments.git
+   git clone https://github.com/fabricio-vianna/contract-installments.git
+   
 2. Abra o projeto em sua IDE Java (Eclipse, IntelliJ, VS Code)
 
 3. Compile e execute a classe Program.java
@@ -42,3 +43,4 @@ O objetivo é automatizar o **processamento de contratos** e gerar **parcelas de
 🙏 Créditos
 Desenvolvido seguindo o curso do professor Nélio Alves.
 Todos os conceitos aplicados e a estrutura do projeto são baseados no material do curso.
+
