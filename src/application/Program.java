@@ -9,8 +9,12 @@ import model.entities.Contract;
 import model.entities.Installment;
 import model.service.ContractService;
 import model.service.OnlinePaymentService;
+import model.service.PaypalService;
 
 public class Program {
+
+
+
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
@@ -23,7 +27,7 @@ public class Program {
         int number = sc.nextInt();
         sc.nextLine();
         System.out.print("Data (dd/MM/yyyy): ");
-        LocalDate date = LocalDate.parse(sc.nextLine(), dtf);
+        LocalDate date = LocalDate.parse(sc.next(), dtf);
         System.out.print("Valor do contrato: ");
         double totalValue = sc.nextDouble();
 
@@ -32,7 +36,7 @@ public class Program {
         System.out.print("Entre com o número de parcelas: ");
         int month = sc.nextInt();
 
-        ContractService contractService = new ContractService(new OnlinePaymentService() {
+        ContractService contractService = new ContractService(new PaypalService() {
         });
         contractService.processContract(contract, month);
 
